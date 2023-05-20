@@ -41,6 +41,7 @@
             label4 = new Label();
             colorDialog = new ColorDialog();
             trackBar1 = new TrackBar();
+            btnBeniSasirt = new Button();
             ((System.ComponentModel.ISupportInitialize)nudX).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudY).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudBoyut).BeginInit();
@@ -163,6 +164,16 @@
             trackBar1.TabIndex = 12;
             trackBar1.Scroll += trackBar1_Scroll;
             // 
+            // btnBeniSasirt
+            // 
+            btnBeniSasirt.Location = new Point(692, 171);
+            btnBeniSasirt.Name = "btnBeniSasirt";
+            btnBeniSasirt.Size = new Size(124, 46);
+            btnBeniSasirt.TabIndex = 3;
+            btnBeniSasirt.Text = "BENİ ŞAŞIRT";
+            btnBeniSasirt.UseVisualStyleBackColor = true;
+            btnBeniSasirt.Click += btnBeniSasirt_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -171,6 +182,7 @@
             Controls.Add(trackBar1);
             Controls.Add(pboRenk);
             Controls.Add(lstNokta);
+            Controls.Add(btnBeniSasirt);
             Controls.Add(btnEkle);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -207,5 +219,6 @@
         private Label label4;
         private ColorDialog colorDialog;
         private TrackBar trackBar1;
+        private Button btnBeniSasirt;
     }
 }

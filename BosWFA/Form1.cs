@@ -54,6 +54,25 @@ namespace BosWFA
             pboRenk.BackColor = cdi.Color;
         }
 
+        private void btnBeniSasirt_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            
+            Nokta point = new Nokta
+                (
+                rnd.Next(501),
+                rnd.Next(501),
+                rnd.Next(200),
+                Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256))
+                );
 
+            lstNokta.Items.Add(point);
+            duvar.Refresh();
+
+
+
+
+
+        }
     }
 }
