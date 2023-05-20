@@ -42,6 +42,7 @@
             colorDialog = new ColorDialog();
             trackBar1 = new TrackBar();
             btnBeniSasirt = new Button();
+            btnKaydet = new Button();
             ((System.ComponentModel.ISupportInitialize)nudX).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudY).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudBoyut).BeginInit();
@@ -174,6 +175,16 @@
             btnBeniSasirt.UseVisualStyleBackColor = true;
             btnBeniSasirt.Click += btnBeniSasirt_Click;
             // 
+            // btnKaydet
+            // 
+            btnKaydet.Location = new Point(12, 541);
+            btnKaydet.Name = "btnKaydet";
+            btnKaydet.Size = new Size(998, 46);
+            btnKaydet.TabIndex = 3;
+            btnKaydet.Text = "KAYDET";
+            btnKaydet.UseVisualStyleBackColor = true;
+            btnKaydet.Click += btnKaydet_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -183,6 +194,7 @@
             Controls.Add(pboRenk);
             Controls.Add(lstNokta);
             Controls.Add(btnBeniSasirt);
+            Controls.Add(btnKaydet);
             Controls.Add(btnEkle);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -220,5 +232,6 @@
         private ColorDialog colorDialog;
         private TrackBar trackBar1;
         private Button btnBeniSasirt;
+        private Button btnKaydet;
     }
 }

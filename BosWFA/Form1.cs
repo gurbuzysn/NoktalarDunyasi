@@ -1,3 +1,5 @@
+using System.Drawing.Imaging;
+
 namespace BosWFA
 {
     public partial class Form1 : Form
@@ -57,7 +59,7 @@ namespace BosWFA
         private void btnBeniSasirt_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            
+
             Nokta point = new Nokta
                 (
                 rnd.Next(501),
@@ -73,6 +75,14 @@ namespace BosWFA
 
 
 
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            Bitmap bmp = new Bitmap(duvar.Width, duvar.Height);
+            duvar.DrawToBitmap(bmp,new Rectangle(0,0,duvar.Width,duvar.Height));
+            string yol = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            bmp.Save(yol + "\\resim.jpg", ImageFormat.Jpeg);
         }
     }
 }
